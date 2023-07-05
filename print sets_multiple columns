@@ -1,0 +1,3 @@
+for column in test.columns:
+    if test[column].dtype=="object":
+        print(f'{column} is {set(test[column])}')
