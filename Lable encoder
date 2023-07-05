@@ -1,0 +1,6 @@
+from sklearn.preprocessing import LabelEncoder
+le=LabelEncoder()
+for col in train.columns:
+    train[col]=le.fit_transform(train[col])
+
+train.head()
